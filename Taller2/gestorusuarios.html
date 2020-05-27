@@ -1,28 +1,25 @@
 <html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
     <body>
         <div>
             <h3>Insertar</h3>
-            <form action="insertar.php" method="post">
+            <form action="insertarusuario.php" method="post">
                 Cedula: <input type="number" name="cedula" required><br>
                 Username: <input type="text" name="username" required pattern="^[a-zA-Z\s]+$"><br>
                 Contraseña: <input type="password" name="contraseña"><br>
-                Edad: <input type="number" name="edad" required><br>
-                E-mail: <input type="email" name="email" required><br>
                 <input type="submit" name="Insertar" value="Insertar">
             </form>
         </div>
         <div>
-            <h3>Listar</h3>
-            <form action="listar.php" method="post">
-                Ordenar: <select name ="orden">
-                    <option value="ASC">Ascendente</option>
-                    <option value="DESC">Descendente</option>
-                  </select><br>
-                Columna: <select name = "columna" >
-                    <option value="Nombre">Nombre</option>
-                    <option value="Cedula">Cedula</option>
-                  </select><br>
-                <input type="submit" name="Listar" value="Listar">
+            <h3>Login</h3>
+            <form action="login.php" method="post">
+                <form action="insertarusuario.php" method="post">
+                    Username: <input type="text" name="username" required pattern="^[a-zA-Z\s]+$"><br>
+                    Contraseña: <input type="password" name="contraseña"><br>
+                    <input type="submit" name="Insertar" value="Insertar">
+                </form>
             </form>
         </div> 
         <div>

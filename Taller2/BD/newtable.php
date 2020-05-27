@@ -19,14 +19,14 @@
     $sql = "CREATE TABLE Usuarios 
     (
     PID INT NOT NULL AUTO_INCREMENT, 
-    Username CHAR(20),
-    PRIMARY KEY(PID,Username),
+    Nombre CHAR(20),
+    PRIMARY KEY(PID,Nombre),
     Rol BIT(1),
-    Contraseña CHAR(50),
+    Contraseña CHAR(255),
     Cedula BIGINT
     )";
     if (mysqli_query($con, $sql)) {
-        echo "Tabla Personas creada correctamente";
+        echo "Tabla Usuarios creada correctamente";
     } else {
         echo "Error en la creacion " . mysqli_error($con);
     }
